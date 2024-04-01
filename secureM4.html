@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Security Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"   />
+    <link rel="stylesheet" href="secureM4.css">
+    <link rel="stylesheet" href="secureM4Media.css">
+</head>
+
+<body id="webbody">
+    <!-- <nav id="navBar">
+        <div id="navSec1"><a href="https://mobiri.se" target="_blank" id="mnHdSecA1">
+                <header id="navSec1Hd">SECUREM4</header>
+            </a>
+        </div>
+        <div class="navSbSec">
+            <div id="navSec2">
+                <header><a href="https://mobiri.se" class="mnHdSecA2">Home</a></header>
+                <header><a href="https://mobiri.se" class="mnHdSecA2">About</a></header>
+                <header><a href="https://mobiri.se" class="mnHdSecA2">Features</a></header>
+                <header><a href="https://mobiri.se" class="mnHdSecA2">+1(234)5678901</a></header>
+            </div>
+            <div id="navSec3">
+                <a href="https://mobiri.se" target="_blank">
+                    <div class="logo"><i class="fa-brands fa-facebook-f fa-xl" style="color: #74C0FC;"></i></div>
+                </a>
+                <a href="https://mobiri.se" target="_blank">
+                    <div class="logo"><i class="fa-brands fa-twitter fa-xl" style="color: #74C0FC;"></i></div>
+                </a>
+                <a href="https://mobiri.se" target="_blank">
+                    <div class="logo"><i class="fa-brands fa-instagram fa-xl" style="color: #74C0FC;"></i></div>
+                </a>
+            </div>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg navBar">
+        <div class="container-fluid ">
+          <a class="navbar-brand  d-flex flex-row" href="https://mobiri.se" target="_blank">
+            <h3 class="mx-2 ms-5 navSec1Hd">SECUREM4</h3>
+          </a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav  ms-auto navSec2">
+              <li class="nav-item navBtns py-4 px-3" >
+                <a class="nav-link" href="https://mobiri.se">Home</a>
+              </li>
+              <li class="nav-item navBtns py-4 px-3" >
+                <a class="nav-link" href="https://mobiri.se">About</a>
+              </li>
+              <li class="nav-item navBtns py-4 px-3" >
+                <a class="nav-link" href="https://mobiri.se">Features</a>
+              </li>
+              <li class="nav-item navBtns py-4 px-3" >
+                <a class="nav-link" href="https://mobiri.se">+1(234)5678901</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end  " id="navbarNav">
+            <ul class="navbar-nav d-flex flex-row navSec3">
+              <li class="nav-item logo">
+                <a class="nav-link active" href="https://mobiri.se" target="_blank"><i
+                    class="fa-brands fa-facebook-f fa-lg" style="color: #74C0FC;"></i></a>
+              </li>
+              <li class="nav-item logo">
+                <a class="nav-link active" href="https://mobiri.se" target="_blank"><i class="fa-brands fa-twitter fa-lg"
+                    style="color: #74C0FC;"></i></a>
+              </li>
+              <li class="nav-item logo">
+                <a class="nav-link active" href="https://mobiri.se" target="_blank"><i class="fa-brands fa-instagram fa-lg"
+                    style="color: #74C0FC;"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section id="sec1">
+        <div id="sec1Div1">
+            <header id="sec1Div1Hd1">Security Company</header>
+            <div id="sec1Div1Hd2">
+                <header>Smart Home Security</header>
+            </div>
+        </div>
+        <div id="sec1Div2">
+            <p id="sec1P">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, unde. Facilis nam, illum
+                debitis culpa ab odit repellendus. Iure harum numquam iste laborum ea, ullam vero beatae quia cumque
+                provident.</p>
+        </div>
+    </section>
+    <section id="sec2">
+        <header id="sec2Hd">Our Features</header>
+        <p id="sec2P">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </section>
+    <section id="sec3">
+        <div class="sec3Ftrs">
+            <i class="fa-solid fa-house fa-2xl" style="color: #74C0FC;"></i>
+            <header class="sec3Hd">Smart Home Security</header>
+            <p class="sec3P">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="sec3Ftrs">
+            <i class="fa-solid fa-shield fa-2xl" style="color: #74C0FC;"></i>
+            <header class="sec3Hd">Cyber Security</header>
+            <p class="sec3P">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="sec3Ftrs">
+            <i class="fa-solid fa-video fa-2xl" style="color: #74C0FC;"></i>
+            <header class="sec3Hd">CCTV Cameras</header>
+            <p class="sec3P">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </section>
+    <section id="sec4">
+        <div id="sec4Div1">
+            <header id="sec4Div1Hd">About Company</header>
+            <p id="sec4Div1Qte">The safety of our customers is our top priority!</p>
+        </div>
+        <div id="sec4Div2">
+            <blockquote id="sec4Div2P">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur unde, corrupti
+                deleniti explicabo quisquam tempora! Molestias, dolorem iste culpa at, laborum deserunt neque minus
+                perspiciatis ut eius, corporis tempore enim aliquid nihil? Dolorum, possimus reprehenderit facilis autem
+                voluptatibus, pariatur quam voluptates eius sit aliquam sequi!</blockquote>
+        </div>
+    </section>
+    <section id="sec5">
+        <div id="sec5Hd">
+            <header>Our Products</header>
+        </div>
+        <div class="sec5SbSec">
+            <div class="sec5Srvs">
+                <div class="sec5SrvsHd">
+                    <span class="sec5SrvsNm">Smart Home Security</span>
+                    <span class="sec5SrvsCost1">$ 139</span>
+                </div>
+                <p class="sec5SrvsDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur, soluta
+                    deserunt necessitatibus officia sapiente est et dolor ab possimus cum sed accusantium corporis.</p>
+            </div>
+            <div class="sec5Srvs">
+                <div class="sec5SrvsHd">
+                    <span class="sec5SrvsNm">CCTV Cameras</span>
+                    <span class="sec5SrvsCost">$339</span>
+                </div>
+                <p class="sec5SrvsDes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat ad iusto.
+                    Sunt delectus sed nobis consequatur soluta, numquam totam alias fuga atque exercitationem?</p>
+            </div>
+            <div class="sec5Srvs">
+                <div class="sec5SrvsHd">
+                    <span class="sec5SrvsNm">Cyber Security</span>
+                    <span class="sec5SrvsCost">$ 299</span>
+                </div>
+                <p class="sec5SrvsDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur, soluta
+                    deserunt necessitatibus officia sapiente est et dolor ab possimus cum sed accusantium corporis.</p>
+            </div>
+            <div class="sec5Srvs">
+                <div class="sec5SrvsHd">
+                    <span class="sec5SrvsNm">Cyber Security</span>
+                    <span class="sec5SrvsCost">$ 299</span>
+                </div>
+                <p class="sec5SrvsDes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat ad iusto.
+                    Sunt delectus sed nobis consequatur soluta, numquam placeat laudantium error ab ad exercitationem?</p>
+            </div>
+            <div class="sec5Srvs">
+                <div class="sec5SrvsHd">
+                    <span class="sec5SrvsNm">CCTV Cameras</span>
+                    <span class="sec5SrvsCost">$ 339</span>
+                </div>
+                <p class="sec5SrvsDes">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe consectetur, soluta
+                    deserunt necessitatibus officia sapiente est et dolor ab possimus cum sed accusantium corporis.</p>
+            </div>
+            <div class="sec5Srvs">
+                <div class="sec5SrvsHd">
+                    <span class="sec5SrvsNm">Smart Home Security</span>
+                    <span class="sec5SrvsCost1">$ 139</span>
+                </div>
+                <p class="sec5SrvsDes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repellat ad iusto.
+                    Sunt delectus sed nobis consequatur soluta, numquam totam alias fuga atque ab ad exercitationem?</p>
+            </div>
+        </div>
+    </section>
+    <section id="sec6">
+        <header class="sec6Hd">Our Upcoming Events</header>
+        <div id="sec6SbSec">
+            <div class="sec6UpEvnts">
+                <div class="sec6ImgSec"><img
+                    src="https://mobirise.com/extensions/securem4/smart-home/assets/images/features1.jpg"
+                    alt="img not found" class="sec6Img">
+                </div>
+                <p class="sec6Vrsn">15.06.21</p>
+                <header class="sec6UpEvntsFtrs">Cyber Security</header>
+                <p class="sec6UpEvntsFtrsI">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nisi laborum.
+                    Quas voluptates et temporibus.</p>
+                <p class="sec6MI">Read more</p>
+            </div>
+            <div class="sec6UpEvnts">
+                <div class="sec6ImgSec"><img
+                    src="https://mobirise.com/extensions/securem4/smart-home/assets/images/background1.jpg"
+                    alt="img not found" class="sec6Img">
+                </div>
+                <p class="sec6Vrsn">24.06.21</p>
+                <header class="sec6UpEvntsFtrs">Smart Home Security</header>
+                <p class="sec6UpEvntsFtrsI">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae excepturi
+                    esse, praesentium magni dignissimos.</p>
+                <p class="sec6MI">Read more</p>
+            </div>
+        </div>
+    </section>
+    <section id="sec7">
+        <header id="sec7Hd">Our Team</header>
+        <div class="sec7Tm">
+            <div class="sec7ImgTmNm">
+                <img src="https://mobirise.com/extensions/securem4/smart-home/assets/images/team1.jpg" alt="Team img"
+                    class="sec7Img">
+                <div class="sec7AbtTm">
+                    <header class="sec7TmNm">James Ford</header>
+                    <br>
+                    <span class="sec7TmPst">General Director</span>
+                </div>
+            </div>
+            <div class="sec7Arw">
+                <i class="fa-solid fa-arrow-right fa-2xl" style="color: #74C0FC;"></i>
+            </div>
+        </div>
+        <div class="sec7Tm">
+            <div class="sec7ImgTmNm">
+                <img src="https://mobirise.com/extensions/securem4/smart-home/assets/images/team2.jpg" alt="Team img"
+                    class="sec7Img">
+                <div class="sec7AbtTm">
+                    <header class="sec7TmNm">Ann Brown</header>
+                    <br>
+                    <span class="sec7TmPst">Manager</span>
+                </div>
+            </div>
+            <div class="sec7Arw">
+                <i class="fa-solid fa-arrow-right fa-2xl" style="color: #74C0FC;"></i>
+            </div>
+        </div>
+        <div class="sec7Tm">
+            <div class="sec7ImgTmNm">
+                <img src="https://mobirise.com/extensions/securem4/smart-home/assets/images/team3.jpg" alt="Team img"
+                    class="sec7Img">
+                <div class="sec7AbtTm">
+                    <header class="sec7TmNm">Ben Jason</header>
+                    <br>
+                    <span class="sec7TmPst">Developer</span>
+                </div>
+            </div>
+            <div class="sec7Arw">
+                <i class="fa-solid fa-arrow-right fa-2xl" style="color: #74C0FC;"></i>
+            </div>
+        </div>
+    </section>
+    <section id="sec8">
+        <div id="sec8FtrsRatingSec1">
+            <header id="sec8Abt">About Us</header>
+            <header id="sec8Ftrs">Secure Features</header>
+            <span id="sec8FtrsDsrp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, omnis. Asperiores enim
+                sequi unde animi dignissimos.</span>
+        </div>
+        <div id="sec8FtrsRatingSec2">
+            <div class="sec8MtrRtng">
+                <span class="sec8FtrsMtr">Smart Home Security</span>
+                <span class="sec8Perc">92%</span>
+            </div>
+            <meter value="92" min="0" max="100" class="sec8Mtr">92%</meter>
+            <br>
+            <div class="sec8MtrRtng">
+                <span class="sec8FtrsMtr">Cyber Security</span>
+                <span class="sec8Perc">71%</span>
+            </div>
+            <meter value="71" min="0" max="100" class="sec8Mtr">71%</meter>
+            <br>
+            <div class="sec8MtrRtng">
+                <span class="sec8FtrsMtr">CCTV</span>
+                <span class="sec8Perc">53%</span>
+            </div>
+            <meter value="53" min="0" max="100" class="sec8Mtr">53%</meter>
+        </div>
+    </section>
+    <section id="sec9">
+        <div class="sec9SbSec">
+            <div class="sec9ImgSec">
+                <img src="https://mobirise.com/extensions/securem4/smart-home/assets/images/features1.jpg"
+                alt="img not found" class="sec9Img">
+            </div>
+            <footer class="sec9ImgHd">Cyber Security</footer>
+        </div>
+        <div class="sec9SbSec">
+            <div class="sec9ImgSec">
+                <img src="https://mobirise.com/extensions/securem4/smart-home/assets/images/features3.jpg"
+                alt="img not found" class="sec9Img">
+            </div>
+            <footer class="sec9ImgHd">Smart Home Security</footer>
+        </div>
+    </section>
+    <!-- <section id="sec10">
+        <header id="sec10Hd">Accordion FAQ</header>
+        <div class="sec10SbSec">
+            <p class="sec10P">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="sec10Arw">
+                <i class="fa-solid fa-angle-down fa-2xl" class="sec10Hover"></i>
+            </div>
+        </div>
+        <div class="sec10SbSec">
+            <p class="sec10P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos!</p>
+            <div class="sec10Arw">
+                <i class="fa-solid fa-angle-down fa-2xl" class="sec10Hover"></i>
+            </div>
+        </div>
+        <div class="sec10SbSec">
+            <p class="sec10P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ut.</p>
+            <div class="sec10Arw">
+                <i class="fa-solid fa-angle-down fa-2xl" class="sec10Hover"></i>
+            </div>
+        </div>
+    </section> -->
+    <section id="sec10">
+        <div class="accordion" id="example">
+          <div class="accordion-item d-none"></div>
+          <div class="accordion-item sec10SbSec">
+            <p class="accordion-header border-0  m-0 p-0 para">
+              <button class="accordion-button collapsed bttn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </button>
+            </p>
+          </div>
+          <div id="collapseone" class="accordion-collapse collapse" data-bs-parent="#example">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo
+                leo eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non auctor mauris.
+                Fusce ultrices mattis mattis. Aliquam sapien risus, dignissim quis magna non, congue molestie sapien.
+                Quisque quis eros in sapien aliquam convallis sit amet quis ipsum. Donec eu enim pretium, vulputate mi eget,
+                condimentum augue. Suspendisse potenti.</p>
+            </div>
+          </div>
+          <div class="accordion-item sec10SbSec">
+            <p class="accordion-header border-0  m-0 p-0 para">
+    
+    
+              <button class="accordion-button collapsed bttn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </button>
+            </p>
+          </div>
+          <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#example">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo
+                leo eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non auctor mauris.
+                Fusce ultrices mattis mattis. Aliquam sapien risus, dignissim quis magna non, congue molestie sapien.
+                Quisque quis eros in sapien aliquam convallis sit amet quis ipsum. Donec eu enim pretium, vulputate mi eget,
+                condimentum augue. Suspendisse potenti.</p>
+            </div>
+          </div>
+          <div class="accordion-item sec10SbSec">
+            <p class="accordion-header border-0  m-0 p-0 para">
+    
+    
+              <button class="accordion-button collapsed bttn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </button>
+            </p>
+          </div>
+          <div id="collapsethree" class="accordion-collapse collapse" data-bs-parent="#example">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo
+                leo eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non auctor mauris.
+                Fusce ultrices mattis mattis. Aliquam sapien risus, dignissim quis magna non, congue molestie sapien.
+                Quisque quis eros in sapien aliquam convallis sit amet quis ipsum. Donec eu enim pretium, vulputate mi eget,
+                condimentum augue. Suspendisse potenti.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section id="sec11">
+        <header id="sec11Hd">Our Clients</header>
+        <div id="sec11Clnts">
+            <div class="sec11ClntsImg"><img
+                    src="https://mobirise.com/extensions/securem4/smart-home/assets/images/1.png" alt="Not Found"
+                    class="sec11Img"></div>
+            <div class="sec11ClntsImg"><img
+                    src="https://mobirise.com/extensions/securem4/smart-home/assets/images/2.png" alt="Not Found"
+                    class="sec11Img" id="sec11ClntsImg1"></div>
+            <div class="sec11ClntsImg"><img
+                    src="https://mobirise.com/extensions/securem4/smart-home/assets/images/3.png" alt="Not Found"
+                    class="sec11Img"></div>
+            <div class="sec11ClntsImg"><img
+                    src="https://mobirise.com/extensions/securem4/smart-home/assets/images/4.png" alt="Not Found"
+                    class="sec11Img"></div>
+            <div class="sec11ClntsImg"><img
+                    src="https://mobirise.com/extensions/securem4/smart-home/assets/images/2.png" alt="Not Found"
+                    class="sec11Img" id="sec11ClntsImg1"></div>
+            <div class="sec11ClntsImg"><img
+                    src="https://mobirise.com/extensions/securem4/smart-home/assets/images/3.png" alt="Not Found"
+                    class="sec11Img"></div>
+        </div>
+    </section>
+    <section id="sec12">
+        <header id="sec12Hd">Testimonials</header>
+        <div id="sec12Cont">
+            <div class="sec12SbSec">
+                <p class="sec12P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque enim sunt error
+                    amet animi tempore nihil quis perspiciatis iure similique laboriosam totam cupiditate voluptates
+                    iste, reprehenderit quae.</p>
+                <div class="sec12AbtClnt">
+                    <div>
+                        <img src="https://mobirise.com/extensions/securem4/smart-home/assets/images/team1.jpg"
+                            alt="not found" class="sec12Img">
+                    </div>
+                    <div class="sec12ImgSec">
+                        <span class="sec12ClntNm">Martin Smith</span>
+                        <span class="sec12Rel">Client</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sec12SbSec">
+                <p class="sec12P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum exercitationem at rem hic
+                    atque molestias facilis maiores officiis, excepturi libero asperiores commodi est, laudantium et
+                    error, qui ab quam?</p>
+                <div class="sec12AbtClnt">
+                    <div>
+                        <img src="https://mobirise.com/extensions/securem4/smart-home/assets/images/team2.jpg"
+                            alt="not found" class="sec12Img">
+                    </div>
+                    <div class="sec12ImgSec">
+                        <span class="sec12ClntNm">Jessica Brown</span>
+                        <span class="sec12Rel">Client</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec13">
+        <header id="sec13Hd">Contacts</header>
+        <p id="sec13P">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div id="sec13SbSec">
+            <div class="sec13ContDtls">
+                <i class="fa-regular fa-envelope fa-2xl" style="color: #74C0FC;" id="sec13ITag"></i>
+                <span class="sec13ContType">Email</span>
+                <span class="sec13ContAdrs">email@atyoursite.com</span>
+            </div>
+            <div class="sec13ContDtls">
+                <i class="fa-solid fa-location-dot fa-2xl" style="color: #74C0FC;"></i>
+                <span class="sec13ContType">Office</span>
+                <span class="sec13ContAdrs">South Carolina 3531 Street 54</span>
+            </div>
+            <div class="sec13ContDtls">
+                <i class="fa-solid fa-phone fa-2xl" style="color: #74C0FC;"></i>
+                <span class="sec13ContType">Phone</span>
+                <span class="sec13ContAdrs">+1(234)5678901</span>
+            </div>
+        </div>
+    </section>
+    <section id="sec14">
+        <header id="sec14Hd">Subscribe</header>
+        <p id="sec14P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolores illum quidem! Eum
+            tenetur ex, explicabo voluptate modi et quaerat?</p>
+        <div class="inp">
+            <input placeholder="Email" type="email" id="sec14Inp">
+            <a href="https://mobiri.eu/"><button id="sec14Sbmt">Subscribe</button></a>
+        </div>
+    </section>
+    <section id="sec15">
+        <header id="sec15Hd">Our Locations</header>
+        <div id="sec15Loc">
+            <div class="sec15GMap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121831.98537220381!2d78.40399359999999!3d17.399807999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1710222276955!5m2!1sen!2sin"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="sec15GMap1"></iframe>
+            </div>
+            <div class="sec15GMap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2282.130974120498!2d-73.98330485579467!3d40.74886103590463!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9be51b00b%3A0xb35761bbf2a4d32f!2s362%205th%20Ave%2C%20New%20York%2C%20NY%2010001%2C%20USA!5e0!3m2!1sen!2sin!4v1709018114522!5m2!1sen!2sin"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" id="sec15GMap2"></iframe>
+            </div>
+        </div>
+    </section>
+    <section id="sec16">
+        <div id="sec16SbSec1">
+            <header>SECUREM4</header>
+        </div>
+        <div id="sec16SbSec2">
+            <footer>© copy right 2025 Mobirise - All Rights Reserved</footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, alias.</p>
+        </div>
+    </section>
+</body>
+
+</html>
